@@ -1,2 +1,4 @@
-$("#book-<%= @book.id %> .comments-count").html("コメント数: <%= @book.book_comments.count %>");
+$("#book-<%= @book.id %> .comment").html("コメント数: <%= @book.book_comments.count %>");
 $("#book_comment-<%= @book.id %>").html("<%= j(render 'book_comments/index', book_comments: @book.book_comments) %>");
+
+<!--大事なことは、classやidの名前を間違えずにセレクターに入力すること-->

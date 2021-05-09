@@ -12,9 +12,11 @@
     <%= render 'layouts/header' %>
       <main>
         <% if user_signed_in? %>
+        <!--検索のビューを持ってくるためのコード↓-->
           <%= render 'layouts/search' %>
         <% end %>
         <p id="notice"><%= notice %></p>
+        <!--↓これがないと他のビューを表示する事ができない-->
         <%= yield %>
       </main>
     <%= render 'layouts/footer' %>

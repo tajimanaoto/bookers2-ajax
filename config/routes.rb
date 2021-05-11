@@ -8,7 +8,7 @@ Rails.application.routes.draw do
     # この記述を「ネストする」という
     # このようにコーディングすることでどのbookに対してのいいねやコメントなのかを紐づける事ができる
     # 複数形と単数形の違いは情報が複数か一つしかないかの違い
-    # resourceの違いに関してはhttps://qiita.com/wacker8818/items/1ba526fcbc73e065a511を参照すると良い
+    # resourceの違いに関してはhttps://qiita.com/wacker8818/items/1ba526fcbc73e065a511を参照すると良いよ
     resource :favorites, only: [:create, :destroy]
     resources :book_comments, only: [:create, :destroy]
   end
